@@ -1,0 +1,219 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none; 
+}
+
+ul {
+    list-style: none;
+}
+.active {
+    color: #0f0d0e;
+    text-decoration: underline;
+    font-weight: bold;
+}
+body , html {
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px;
+    color: black;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link li{
+    margin: 0 30px;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('Assets/orang.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content {
+    margin-bottom: 150px;
+    color: #000;
+    text-align: center;
+}
+.header-content h2 {
+    font-size: 5vmin;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header-content h1 {
+    font-size: 10vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn {
+    padding: 8px 15px;
+    background: #c90606;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+/* section*/
+section {
+    width: 80%;
+    margin: 80px auto;
+
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row .col img {
+    width: 80%;
+}
+.features .row {
+    margin-top: 50px;
+}
+h4 {
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+p {
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+.features .ctn {
+    margin-top: 30px;
+}
+.Offer {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./Assets/anak pic (1).jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.Offer-content {
+    width: 80%;
+    padding: 50px;
+    color: rgb(14, 9, 9);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Offer-content h1 {
+    font-size: 10vmin;
+    margin: 50px;
+}
+.Offer-content p {
+    color: rgb(44, 18, 18);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4vmin;
+    font-weight: 100;
+
+}
+.Offer-content .ctn {
+    margin-top: 40px;
+}
+
+.message {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.message-content {
+    background: beige;
+    width: 90%;
+    padding: 2rem;
+    box-shadow: 0 0px 2.2px rgba(0, 0, 0, 0.028), 0 0px 5.3px rgba(0, 0, 0, 0.04) 0 0px 10px rgba(0, 0, 0, 0.05);
+}
+.message-content h2 {
+    background: bisque;
+    color: #000;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    cursor: default;
+}
+form,
+input,
+textarea,
+button {
+    font-family: inherit;
+    font-size: initial;
+}
+.form-group label {
+    display: block;
+    margin: 2rem 0 0.5rem 0;
+}
+.form-group input {
+    width: 100%;
+    padding: 1rem 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.form-group textarea {
+    width: 100%;
+    padding: 1rem 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+/* mobile device */
+@media only screen and (max-width:600px){
+
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-link {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5 ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+
+    }
+    .nav-link li {
+        margin: 30px auto;
+    }
+}
